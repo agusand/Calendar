@@ -1,0 +1,87 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background: tomato;
+	font-family: "Roboto", sans-serif;
+}
+
+.calendar {
+	display: flex;
+	flex-direction: column;
+	background: white;
+	padding: 2rem 1rem;
+	align-items: center;
+	gap: 1rem;
+}
+
+.calendar__yearContainer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 1rem;
+	margin: 0.5rem;
+}
+
+.calendar__arrow {
+	object-fit: contain;
+	height: 90%;
+}
+
+.calendar__monthContainer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.calendar__month {
+	color: lightgray;
+	font-size: 0.8rem;
+}
+
+.calendar__month--active {
+	color: tomato;
+}
+
+.calendar__weekDayContainer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.calendar__weekDay {
+	font-size: 0.8rem;
+	width: 100%;
+	text-align: center;
+}
+
+.calendar__monthDayContainer {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 0.5rem;
+	width: 100%;
+}
+
+.calendar__monthDay {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	margin: 0.5rem;
+}
+
+.calendar__monthDay--active {
+	background-color: tomato;
+	border-radius: 50%;
+	color: white;
+}
+
+.calendar__monthDay--first {
+	grid-column-start: 3;
+}
